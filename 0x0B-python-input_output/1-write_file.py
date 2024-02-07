@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
 
-def read_file(filename=""):
+def number_of_lines(filename=""):
     with open(filename, "r", encoding="UTF-8") as f:
-        print(f.read(), end="")
+        return len(list(f))
